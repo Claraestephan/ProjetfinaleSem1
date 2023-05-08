@@ -12,3 +12,9 @@ expandBtns.forEach((btn,index)=>{
         }
     })
 })
+
+ const submitBtn = document.getElementById("submit");
+      submitBtn.addEventListener("click", (event) => {
+        event.preventDefault(); // prevent form from submitting and refreshing page
+        alert("Form submitted!");
+      });
